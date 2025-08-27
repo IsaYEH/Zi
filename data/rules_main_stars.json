@@ -1,0 +1,116 @@
+{
+  "stars_main": [
+    "紫微",
+    "天機",
+    "太陽",
+    "武曲",
+    "天同",
+    "廉貞",
+    "天府",
+    "太陰",
+    "貪狼",
+    "巨門",
+    "天相",
+    "天梁",
+    "七殺",
+    "破軍"
+  ],
+  "ziwei_series_rule": {
+    "anchor_star": "紫微",
+    "direction": "ccw",
+    "sequence": [
+      {
+        "star": "紫微",
+        "gap_after": 0
+      },
+      {
+        "star": "天機",
+        "gap_after": 1
+      },
+      {
+        "star": "太陽",
+        "gap_after": 0
+      },
+      {
+        "star": "武曲",
+        "gap_after": 0
+      },
+      {
+        "star": "天同",
+        "gap_after": 2
+      },
+      {
+        "star": "廉貞",
+        "gap_after": 0
+      }
+    ],
+    "offsets_from_anchor": {
+      "天機": -1,
+      "太陽": -3,
+      "武曲": -4,
+      "天同": -5,
+      "廉貞": -8
+    }
+  },
+  "tianfu_series_rule": {
+    "anchor_star": "天府",
+    "direction": "cw",
+    "sequence": [
+      {
+        "star": "天府",
+        "gap_after": 0
+      },
+      {
+        "star": "太陰",
+        "gap_after": 0
+      },
+      {
+        "star": "貪狼",
+        "gap_after": 0
+      },
+      {
+        "star": "巨門",
+        "gap_after": 0
+      },
+      {
+        "star": "天相",
+        "gap_after": 0
+      },
+      {
+        "star": "天梁",
+        "gap_after": 0
+      },
+      {
+        "star": "七殺",
+        "gap_after": 3
+      },
+      {
+        "star": "破軍",
+        "gap_after": 0
+      }
+    ],
+    "offsets_from_anchor": {
+      "太陰": 1,
+      "貪狼": 2,
+      "巨門": 3,
+      "天相": 4,
+      "天梁": 5,
+      "七殺": 6,
+      "破軍": 10
+    }
+  },
+  "ziwei_to_tianfu_mapping": {
+    "子": "辰",
+    "丑": "卯",
+    "寅": "寅",
+    "卯": "丑",
+    "辰": "子",
+    "巳": "亥",
+    "午": "戌",
+    "未": "酉",
+    "申": "申",
+    "酉": "未",
+    "戌": "午",
+    "亥": "巳"
+  }
+}

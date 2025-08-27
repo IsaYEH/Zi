@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>紫微斗數 Wenmo‑style</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <meta name="theme-color" content="#121212">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">紫微斗數 <span class="muted">Wenmo‑style</span></div>
+      <nav class="actions">
+        <button id="btnSample" class="btn">載入範例</button>
+        <button id="btnExport" class="btn">匯出JSON</button>
+        <button id="btnPNG" class="btn">下載PNG</button>
+        <details class="menu">
+          <summary>設定</summary>
+          <div class="menu-body">
+            <label>字級 <input id="fontScale" type="range" min="0.9" max="1.2" step="0.01" value="1.0"></label>
+            <label><input id="darkMode" type="checkbox" checked> 深色模式</label>
+          </div>
+        </details>
+      </nav>
+    </header>
+
+    <section class="sidebar">
+      <h3>輸入</h3>
+      <div class="field">
+        <label>陽曆生日（YYYY-MM-DD）</label>
+        <input id="gregorian" placeholder="1991-06-28" value="1991-06-28">
+      </div>
+      <div class="field">
+        <label>時辰</label>
+        <select id="hourZhi">
+          <option value="子">子</option><option value="丑">丑</option><option value="寅">寅</option>
+          <option value="卯">卯</option><option value="辰">辰</option><option value="巳">巳</option>
+          <option value="午" selected>午</option><option value="未">未</option><option value="申">申</option>
+          <option value="酉">酉</option><option value="戌">戌</option><option value="亥">亥</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>性別</label>
+        <select id="gender">
+          <option value="女">女</option>
+          <option value="男" selected>男</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>地點（僅記錄）</label>
+        <input id="location" placeholder="台北" value="台北">
+      </div>
+      <div class="divider"></div>
+      <div class="field">
+        <label>農曆月份（1–12，留空=自動近似）</label>
+        <input id="lunarMonth" placeholder="例如：5">
+      </div>
+      <button id="btnCalc" class="btn primary">排盤</button>
+      <small class="hint">* 為確保準確：請填寫「農曆月份」。若留空將以近似值推定（遇節氣/閏月建議手動輸入）。</small>
+
+      <div class="divider"></div>
+      <h3>視圖</h3>
+      <div class="field">
+        <select id="viewMode">
+          <option value="mingpan">本命盤</option>
+          <option value="daxian">大限</option>
+          <option value="liunian">流年</option>
+          <option value="liuyue">流月</option>
+        </select>
+      </div>
+      <div class="field">
+        <label><input type="checkbox" id="toggleSihua" checked> 顯示四化</label>
+      </div>
+      <div class="field">
+        <label><input type="checkbox" id="toggleAux" checked> 顯示輔星</label>
+      </div>
+    </section>
+
+    <main class="board-wrap">
+      <div id="board" class="board"></div>
+      <footer class="status" id="status"></footer>
+    </main>
+  </div>
+
+  <script src="js/rules.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/ui.js"></script>
+  <script type="module">
+    import { calcChartWithDB } from './js/engine-db.js';
+    window.calcChartWithDB = calcChartWithDB;
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./service-worker.js');
+    }
+  </script>
+</body>
+</html>

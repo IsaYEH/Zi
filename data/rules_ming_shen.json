@@ -1,0 +1,29 @@
+{
+  "命身宮定位": {
+    "rule_zh": "以寅宮起正月，順數至出生月；再由該宮逆數至出生時為命宮；同起寅宮順數至出生月，再順數至出生時為身宮。",
+    "inputs": [
+      "lunar_month (1-12)",
+      "hour_branch (子...亥)"
+    ],
+    "algorithm": {
+      "start_branch": "寅",
+      "month_count_direction": "cw",
+      "ming_hour_direction": "ccw",
+      "shen_hour_direction": "cw"
+    }
+  },
+  "twelve_palaces_order_ccw": [
+    "命",
+    "兄弟",
+    "夫妻",
+    "子女",
+    "財帛",
+    "疾厄",
+    "遷移",
+    "僕役",
+    "事業",
+    "田宅",
+    "福德",
+    "父母"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Ziwei Doushu Rules DB",
+  "version": "1.0.0",
+  "generated_at": "2025-08-27T07:11:19.447690",
+  "notes": [
+    "This dataset encodes machine-readable rules to place main and auxiliary stars, five-element bureaus, and four transformations.",
+    "Direction: cw=順行(clockwise), ccw=逆行(counterclockwise). Positions are relative to a start palace (offset modulo 12).",
+    "Variants are provided where schools differ (e.g., 四化表 for 庚年化科/化忌對應)."
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "palaces_ccw_start_example": [
+    {
+      "index": 0,
+      "name_zh": "命宮",
+      "branch": "亥"
+    },
+    {
+      "index": 1,
+      "name_zh": "父母宮",
+      "branch": "子"
+    },
+    {
+      "index": 2,
+      "name_zh": "福德宮",
+      "branch": "丑"
+    },
+    {
+      "index": 3,
+      "name_zh": "田宅宮",
+      "branch": "寅"
+    },
+    {
+      "index": 4,
+      "name_zh": "事業宮",
+      "branch": "卯"
+    },
+    {
+      "index": 5,
+      "name_zh": "僕役宮",
+      "branch": "辰"
+    },
+    {
+      "index": 6,
+      "name_zh": "遷移宮",
+      "branch": "巳"
+    },
+    {
+      "index": 7,
+      "name_zh": "疾厄宮",
+      "branch": "午"
+    },
+    {
+      "index": 8,
+      "name_zh": "財帛宮",
+      "branch": "未"
+    },
+    {
+      "index": 9,
+      "name_zh": "子女宮",
+      "branch": "申"
+    },
+    {
+      "index": 10,
+      "name_zh": "夫妻宮",
+      "branch": "酉"
+    },
+    {
+      "index": 11,
+      "name_zh": "兄弟宮",
+      "branch": "戌"
+    }
+  ],
+  "note": "This is an example arrangement for UI; algorithms compute actual mapping."
+}
