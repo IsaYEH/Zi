@@ -1,0 +1,115 @@
+{
+  "rules": {
+    "左輔": {
+      "basis": "month",
+      "start": "辰",
+      "direction": "cw"
+    },
+    "右弼": {
+      "basis": "month",
+      "start": "戌",
+      "direction": "ccw"
+    },
+    "文曲": {
+      "basis": "hour",
+      "start": "辰",
+      "direction": "cw"
+    },
+    "文昌": {
+      "basis": "hour",
+      "start": "戌",
+      "direction": "ccw"
+    },
+    "地劫": {
+      "basis": "hour",
+      "start": "亥",
+      "direction": "cw"
+    },
+    "地空": {
+      "basis": "hour",
+      "start": "亥",
+      "direction": "ccw"
+    },
+    "天魁天鉞": {
+      "basis": "year_stem",
+      "mapping": {
+        "甲": [
+          "丑",
+          "未"
+        ],
+        "戊": [
+          "丑",
+          "未"
+        ],
+        "庚": [
+          "丑",
+          "未"
+        ],
+        "乙": [
+          "子",
+          "申"
+        ],
+        "己": [
+          "子",
+          "申"
+        ],
+        "丙": [
+          "亥",
+          "酉"
+        ],
+        "丁": [
+          "亥",
+          "酉"
+        ],
+        "壬": [
+          "卯",
+          "巳"
+        ],
+        "癸": [
+          "卯",
+          "巳"
+        ],
+        "辛": [
+          "午",
+          "寅"
+        ]
+      }
+    },
+    "祿存": {
+      "basis": "year_stem",
+      "mapping": {
+        "甲": "寅",
+        "乙": "卯",
+        "丙": "巳",
+        "丁": "午",
+        "戊": "巳",
+        "己": "午",
+        "庚": "申",
+        "辛": "酉",
+        "壬": "亥",
+        "癸": "子"
+      }
+    },
+    "擎羊": {
+      "basis": "from_lucun",
+      "offset": "+1_cw"
+    },
+    "陀羅": {
+      "basis": "from_lucun",
+      "offset": "+1_ccw"
+    },
+    "天馬": {
+      "basis": "year_branch_quadrant",
+      "mapping": {
+        "寅午戌": "申",
+        "申子辰": "寅",
+        "巳酉丑": "亥",
+        "亥卯未": "巳"
+      }
+    },
+    "火鈴": {
+      "basis": "year_branch_plus_hour",
+      "note": "Requires year-branch based start; simplified demo not implemented fully."
+    }
+  }
+}
