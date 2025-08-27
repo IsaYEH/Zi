@@ -1,0 +1,6 @@
+
+transforms:
+  by_stem_table:
+    Jia: { ziwei: "祿", tianfu: "權", wenchang: "科", jumen: "忌" }
+    Yi: { tianji: "祿", taiyin: "權", wenqu: "科", tianji: "忌" }
+    Bing: { wuchu: "祿", tianliang: "權", wenchang: "科", taiyang: "忌" }

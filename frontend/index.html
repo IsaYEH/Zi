@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>紫微斗數排盤 — Render Demo</title>
+  <link rel="stylesheet" href="/assets/style.css?v=2.3">
+</head>
+<body>
+  <header>
+    <h1>紫微斗數排盤（Render Demo）</h1>
+    <form id="formRoot" class="controls">
+      <label>生日：<input id="date" type="date" value="1991-06-28"></label>
+      <label>時間：<input id="time" type="time" value="12:00"></label>
+      <label>地點：<input id="place" type="text" value="台北"></label>
+      <label>年干：
+        <select id="yearSkySelect"><option value="auto">自動</option></select>
+      </label>
+      <button id="gen" type="submit">生成排盤</button>
+    </form>
+  </header>
+  <main>
+    <section class="zw-grid" id="zwGrid"></section>
+    <aside id="panel"><h3>回傳 JSON</h3><pre id="rawJson"></pre></aside>
+  </main>
+  <footer><small>Demo 規則：wenmo-1.0（含祿/權/科/忌）</small></footer>
+  <script src="/assets/main.js?v=2.3"></script>
+</body>
+</html>
